@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 199879047}
   - component: {fileID: 199879046}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: titlecard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,8 +261,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282833309
-  m_fontColor: {r: 0.6156863, g: 0.85098046, b: 0.27450982, a: 1}
+    rgba: 4279057706
+  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -366,7 +366,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -3.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 278.33, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340697179
 MonoBehaviour:
@@ -411,7 +411,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 340697180}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1272608738}
+        m_TargetAssemblyTypeName: TitleFunc, Assembly-CSharp
+        m_MethodName: ReadThis
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &340697180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +499,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -132.9}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 278.2398, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410399513
 MonoBehaviour:
@@ -532,7 +544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410399514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1272608738}
+        m_TargetAssemblyTypeName: TitleFunc, Assembly-CSharp
+        m_MethodName: exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &410399514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,8 +661,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282833309
-  m_fontColor: {r: 0.6156863, g: 0.85098046, b: 0.27450982, a: 1}
+    rgba: 4279057706
+  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -762,7 +786,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: QUIT GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb201bfae193cb343ab9fc50534fe392, type: 2}
   m_sharedMaterial: {fileID: -8319736959542125497, guid: bb201bfae193cb343ab9fc50534fe392, type: 2}
@@ -771,8 +795,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282833309
-  m_fontColor: {r: 0.6156863, g: 0.85098046, b: 0.27450982, a: 1}
+    rgba: 4279057706
+  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -969,7 +993,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -66.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 223.3765, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143490921
 MonoBehaviour:
@@ -1014,7 +1038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1143490922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1272608738}
+        m_TargetAssemblyTypeName: TitleFunc, Assembly-CSharp
+        m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1143490922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +1101,7 @@ GameObject:
   - component: {fileID: 1195872960}
   - component: {fileID: 1195872959}
   - component: {fileID: 1195872958}
+  - component: {fileID: 1195872961}
   m_Layer: 5
   m_Name: START
   m_TagString: Untagged
@@ -1090,7 +1127,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 57}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 252.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1195872958
 MonoBehaviour:
@@ -1135,7 +1172,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1195872959}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1272608738}
+        m_TargetAssemblyTypeName: TitleFunc, Assembly-CSharp
+        m_MethodName: Game
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1195872959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,6 +1223,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195872956}
   m_CullTransparentMesh: 1
+--- !u!114 &1195872961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195872956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec1baef9e034664bb0074138d9d4269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1198128528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1339,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1272608737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272608739}
+  - component: {fileID: 1272608738}
+  m_Layer: 0
+  m_Name: buttons script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1272608738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272608737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec1baef9e034664bb0074138d9d4269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1272608739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272608737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313107282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START
+  m_text: NEW GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb201bfae193cb343ab9fc50534fe392, type: 2}
   m_sharedMaterial: {fileID: -8319736959542125497, guid: bb201bfae193cb343ab9fc50534fe392, type: 2}
@@ -1410,8 +1514,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282833309
-  m_fontColor: {r: 0.6156863, g: 0.85098046, b: 0.27450982, a: 1}
+    rgba: 4278860842
+  m_fontColor: {r: 0.16470589, g: 0.23529413, b: 0.039215688, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1444,7 +1548,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
