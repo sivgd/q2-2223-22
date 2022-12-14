@@ -20,7 +20,7 @@ public class playercam : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         //get mouse input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * senseX;

@@ -30,7 +30,7 @@ public class PickUpController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
