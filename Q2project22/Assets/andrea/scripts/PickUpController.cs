@@ -30,7 +30,7 @@ public class PickUpController : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
@@ -45,7 +45,7 @@ public class PickUpController : MonoBehaviour
         equipped = true;
         slotFull = true;
 
-        //Make weapon a child of the camera and move it to default position
+        //Make a child of the camera and move it to default position
         transform.SetParent(ItemContainer);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
@@ -69,7 +69,7 @@ public class PickUpController : MonoBehaviour
         rb.isKinematic = false;
         coll.isTrigger = false;
 
-        //Gun carries momentum of player
+        // carries momentum of player
         rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         //AddForce
