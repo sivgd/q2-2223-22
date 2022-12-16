@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   synthesizer: {fileID: 1798927928}
   song:
-    path: e1m1.mid
+    path: e1m1.midi
   playOnStart: 1
   unloadOnStop:
     Enabled: 1
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundFont:
-    path: Roland SC-55.sf2
+    path: SM64SF V2.sf2
 --- !u!4 &1798927929
 Transform:
   m_ObjectHideFlags: 0

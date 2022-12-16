@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   synthesizer: {fileID: 131520132}
   song:
-    path: HOSILFU (yakfak).mid
+    path: HOSILFU (yakfak).midi
   playOnStart: 1
   unloadOnStop:
     Enabled: 1
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundFont:
-    path: Roland SC-55.sf2
+    path: SM64SF V2.sf2
 --- !u!4 &131520133
 Transform:
   m_ObjectHideFlags: 0
