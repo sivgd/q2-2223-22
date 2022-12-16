@@ -21,7 +21,7 @@ public class TitleFunc : MonoBehaviour
     public void ReadThis()
     {
         Debug.Log("controll");
-        SceneManager.LoadScene("controls");
+        SceneManager.LoadScene("ReadThis");
     }
 
     public void Game()
@@ -33,6 +33,6 @@ public class TitleFunc : MonoBehaviour
     public void title()
     {
         Debug.Log("timtle");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("title");
     }
 }

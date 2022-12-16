@@ -123,6 +123,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &131520130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131520133}
+  - component: {fileID: 131520132}
+  - component: {fileID: 131520131}
+  m_Layer: 0
+  m_Name: MIDI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &131520131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131520130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7ebbfa35eb5254bbbedaf0354cc4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synthesizer: {fileID: 131520132}
+  song:
+    path: HOSILFU (yakfak).mid
+  playOnStart: 1
+  unloadOnStop:
+    Enabled: 1
+    Value: 3
+  loop:
+    Enabled: 1
+    Value: 0
+  endTicks:
+    Enabled: 0
+    Value: 0
+  gain: 0.15
+  tempo: 1
+  channels: -1
+--- !u!114 &131520132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131520130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6935756e2d15d42448e50d732fdfa802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFont:
+    path: Roland SC-55.sf2
+--- !u!4 &131520133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131520130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 313.3904, y: 348.4372, z: -38.912598}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199879044
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,8 +335,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279057706
-  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
+    rgba: 4281555003
+  m_fontColor: {r: 0.23137257, g: 0.34509805, b: 0.20000002, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -661,8 +735,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279057706
-  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
+    rgba: 4281555003
+  m_fontColor: {r: 0.23137257, g: 0.34509805, b: 0.20000002, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -795,8 +869,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279057706
-  m_fontColor: {r: 0.16470589, g: 0.2392157, b: 0.050980397, a: 1}
+    rgba: 4281555003
+  m_fontColor: {r: 0.23137257, g: 0.34509805, b: 0.20000002, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1514,8 +1588,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278860842
-  m_fontColor: {r: 0.16470589, g: 0.23529413, b: 0.039215688, a: 1}
+    rgba: 4281555003
+  m_fontColor: {r: 0.23137257, g: 0.34509805, b: 0.20000002, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1618,7 +1692,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9150943, g: 0.5553668, b: 0.2719384, a: 0}
+  m_BackGroundColor: {r: 0.74509805, g: 0.4156863, b: 0.09411766, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
