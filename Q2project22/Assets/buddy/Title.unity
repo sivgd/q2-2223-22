@@ -155,13 +155,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   synthesizer: {fileID: 131520132}
   song:
-    path: HOSILFU (yakfak).midi
+    path: title.mid
   playOnStart: 1
   unloadOnStop:
     Enabled: 1
-    Value: 3
+    Value: 5
   loop:
-    Enabled: 1
+    Enabled: 0
     Value: 0
   endTicks:
     Enabled: 0
