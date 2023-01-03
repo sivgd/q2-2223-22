@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/buddy/ReadThis.unity
     guid: e0e9bc013ae051a49b7096c88247c71c
+  - enabled: 1
+    path: Assets/buddy/credits.unity
+    guid: b16aadae9afe0f149bc0941651847132
+  - enabled: 1
+    path: Assets/buddy/MainScene.unity
+    guid: 899e1954756381d47b0e5e466d927994
   m_configObjects: {}
