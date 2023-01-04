@@ -878,6 +878,7 @@ GameObject:
   - component: {fileID: 774049982}
   - component: {fileID: 774049978}
   - component: {fileID: 774049979}
+  - component: {fileID: 774049980}
   m_Layer: 0
   m_Name: movplat2
   m_TagString: Untagged
@@ -910,6 +911,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1656523, z: 1}
   m_Center: {x: 0, y: 0.08282614, z: 0}
+--- !u!95 &774049980
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774049977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3183eaa5acbbb7b42b469f66ac43b1b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &774049982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1367,6 +1387,7 @@ GameObject:
   - component: {fileID: 1351470446}
   - component: {fileID: 1351470450}
   - component: {fileID: 1351470445}
+  - component: {fileID: 1351470444}
   m_Layer: 6
   m_Name: MovingPlatform
   m_TagString: Untagged
@@ -1374,6 +1395,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &1351470444
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351470443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49757b861196d7d4aa5eaae6d84f401e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1351470445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,11 +1623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4409933843863955778, guid: c383aa32de76a5c499ebdb80cedb1fba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.31
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 4409933843863955778, guid: c383aa32de76a5c499ebdb80cedb1fba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 70.37
+      value: -1.71
       objectReference: {fileID: 0}
     - target: {fileID: 4409933843863955778, guid: c383aa32de76a5c499ebdb80cedb1fba, type: 3}
       propertyPath: m_LocalRotation.w
