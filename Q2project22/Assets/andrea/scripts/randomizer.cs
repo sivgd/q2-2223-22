@@ -35,41 +35,41 @@ public class randomizer : MonoBehaviour
         if(P1 == 1)
         {
             frog1.transform.position = fp11.transform.position;
-            frog1.transform.position = fp11.transform.position;
-            frog1.transform.position = fp11.transform.position;
         }
         if(P1 == 2)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog1.transform.position = fp12.transform.position;
         }
         if(P1 == 3)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog1.transform.position = fp13.transform.position;
         }
         if(P2 == 1)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog2.transform.position = fp21.transform.position;
         }
         if(P2 == 2)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog2.transform.position = fp22.transform.position;
         }
         if(P2 == 3)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog2.transform.position = fp23.transform.position;
 
         }
         if(P3 == 1)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog3.transform.position = fp31.transform.position;
 
         }
         if(P3 == 2)
         {
+            frog3.transform.position = fp32.transform.position;
 
         }
         if(P3 == 3)
         {
+            frog3.transform.position = fp33.transform.position;
 
         }
 
