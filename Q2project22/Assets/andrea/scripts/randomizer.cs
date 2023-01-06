@@ -7,15 +7,15 @@ public class randomizer : MonoBehaviour
     public GameObject frog1;
     public GameObject frog2;
     public GameObject frog3;
-    public GameObject fp11;
-    public GameObject fp12;
-    public GameObject fp13;
-    public GameObject fp21;
-    public GameObject fp22;
-    public GameObject fp23;
-    public GameObject fp31;
-    public GameObject fp32;
-    public GameObject fp33;
+    public GameObject frog1pos1;
+    public GameObject frog1pos2;
+    public GameObject frog1pos3;
+    public GameObject frog2pos1;
+    public GameObject frog2pos2;
+    public GameObject frog2pos3;
+    public GameObject frog3pos1;
+    public GameObject frog3pos2;
+    public GameObject frog3pos3;
     private int P1;
     private int P2;
     private int P3;
@@ -34,42 +34,42 @@ public class randomizer : MonoBehaviour
     {
         if(P1 == 1)
         {
-            frog1.transform.position = fp11.transform.position;
+            frog1.transform.position = frog1pos1.transform.position;
         }
         if(P1 == 2)
         {
-            frog1.transform.position = fp12.transform.position;
+            frog1.transform.position = frog1pos2.transform.position;
         }
         if(P1 == 3)
         {
-            frog1.transform.position = fp13.transform.position;
+            frog1.transform.position = frog1pos3.transform.position;
         }
         if(P2 == 1)
         {
-            frog2.transform.position = fp21.transform.position;
+            frog2.transform.position = frog2pos1.transform.position;
         }
         if(P2 == 2)
         {
-            frog2.transform.position = fp22.transform.position;
+            frog2.transform.position = frog2pos2.transform.position;
         }
         if(P2 == 3)
         {
-            frog2.transform.position = fp23.transform.position;
+            frog2.transform.position = frog2pos3.transform.position;
 
         }
         if(P3 == 1)
         {
-            frog3.transform.position = fp31.transform.position;
+            frog3.transform.position = frog3pos1.transform.position;
 
         }
         if(P3 == 2)
         {
-            frog3.transform.position = fp32.transform.position;
+            frog3.transform.position = frog3pos2.transform.position;
 
         }
         if(P3 == 3)
         {
-            frog3.transform.position = fp33.transform.position;
+            frog3.transform.position = frog3pos3.transform.position;
 
         }
 
