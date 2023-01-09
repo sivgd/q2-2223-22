@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/buddy/MainScene.unity
     guid: 899e1954756381d47b0e5e466d927994
+  - enabled: 1
+    path: Assets/buddy/win.unity
+    guid: bd249c767314bf1448bcf74ee2f93adf
   m_configObjects: {}

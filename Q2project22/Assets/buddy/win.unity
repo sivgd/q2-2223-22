@@ -517,7 +517,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.854902, g: 0.5254902, b: 0.20392159, a: 1}
+  m_BackGroundColor: {r: 0.03396227, g: 0.16981131, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -696,8 +696,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279790270
-  m_fontColor: {r: 0.74509805, g: 0.4156863, b: 0.09411766, a: 1}
+    rgba: 4278542784
+  m_fontColor: {r: 0.754717, g: 0.3805013, b: 0.017799927, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
