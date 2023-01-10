@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/buddy/win.unity
     guid: bd249c767314bf1448bcf74ee2f93adf
+  - enabled: 1
+    path: Assets/buddy/lose.unity
+    guid: 5888ed36a28ced242bb2cf5268a38ec9
   m_configObjects: {}

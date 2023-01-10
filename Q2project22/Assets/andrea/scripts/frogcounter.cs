@@ -9,6 +9,9 @@ public class frogcounter : MonoBehaviour
     public GameObject frog1;
     public GameObject frog2;
     public GameObject frog3;
+    public GameObject Cornelius;
+    public GameObject Bartholomew;
+    public GameObject Greg;
 
     public void OnCollisionEnter(Collision thing)
     {
@@ -17,19 +20,21 @@ public class frogcounter : MonoBehaviour
             Object.Destroy(thing.gameObject);
             frogCount++;
             frog1.gameObject.SetActive(true);
+            Cornelius.SetActive(true);
         }
         if (thing.gameObject.tag == "tadpole2")
         {
             Object.Destroy(thing.gameObject);
             frogCount++;
             frog2.gameObject.SetActive(true);
-
+            Bartholomew.SetActive(true);
         }
         if (thing.gameObject.tag == "tadpole3")
         {
             Object.Destroy(thing.gameObject);
             frogCount++;
             frog3.gameObject.SetActive(true);
+            Greg.SetActive(true);
         }
         if(frogCount == 3)
         {

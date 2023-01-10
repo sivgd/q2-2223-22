@@ -45,7 +45,7 @@ public class PickUpController : MonoBehaviour
         {
             transform.SetParent(ItemContainer);
             transform.localPosition = Vector3.zero;
-            transform.localRotation = Quaternion.Euler(Vector3.zero);
+           // transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
     }
 
@@ -57,7 +57,7 @@ public class PickUpController : MonoBehaviour
         //Make a child of the camera and move it to default position
         transform.SetParent(ItemContainer);
         transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        //transform.localRotation = Quaternion.Euler(Vector3.zero);
 
         //Make Rigidbody kinematic and BoxCollider a trigger
         rb.isKinematic = true;
