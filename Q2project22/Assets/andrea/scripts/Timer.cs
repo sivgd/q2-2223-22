@@ -7,7 +7,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timevalue = 300;
+    public float timeinseconds = 300;
     public TextMeshProUGUI timetext;
     // Start is called before the first frame update
     void Start()
@@ -18,16 +18,16 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timevalue > 0)
+        if(timeinseconds > 0)
         {
-        timevalue -= Time.deltaTime;
+            timeinseconds -= Time.deltaTime;
         }
         else
         {
             SceneManager.LoadScene("lose");
         }
 
-        DisplayTime(timevalue);
+        DisplayTime(timeinseconds);
     }
 
     void DisplayTime(float timetodisplay)
