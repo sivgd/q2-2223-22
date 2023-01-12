@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   synthesizer: {fileID: 131520132}
   song:
-    path: title.mid
+    path: 
   playOnStart: 1
   unloadOnStop:
     Enabled: 1
