@@ -9,15 +9,23 @@ public class Timer : MonoBehaviour
 {
     public float timeinseconds = 300;
     public TextMeshProUGUI timetext;
+    public float timepassed = 0;
+    public frogcounter frogcounter;
+    public TextMeshProUGUI Highscore;
+    private string Timep;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Highscore.text = PlayerPrefs.GetString("Highscore", "0");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(timepassed >= 0 && frogcounter.frogCount < 3)
+        {
+            timepassed += Time.deltaTime;
+        }
         if(timeinseconds > 0)
         {
             timeinseconds -= Time.deltaTime;
@@ -28,6 +36,7 @@ public class Timer : MonoBehaviour
         }
 
         DisplayTime(timeinseconds);
+        timePassed(timepassed);
     }
 
     void DisplayTime(float timetodisplay)
@@ -41,5 +50,27 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timetodisplay % 60);
 
         timetext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    void timePassed(float timepassed)
+    {
+        if (timepassed < 0)
+        {
+            timepassed = 0;
+        }
+
+        float minutes = Mathf.FloorToInt(timepassed / 60);
+        float seconds = Mathf.FloorToInt(timepassed % 60);
+        Timep = string.Format("{0:00}:{1:00}", minutes, seconds);
+        if(frogcounter.frogCount == 3)
+        {
+            if(timepassed < PlayerPrefs.GetFloat("Highscoreinsec", 0)) 
+            { 
+                PlayerPrefs.SetFloat("Highscoreinsec", timepassed);
+                PlayerPrefs.SetString("Highscore", Timep);
+                Highscore.text = Timep;
+            }
+
+        }
+
     }
 }
