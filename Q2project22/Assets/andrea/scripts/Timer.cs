@@ -16,7 +16,8 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Highscore.text = PlayerPrefs.GetString("Highscore", "0");
+        Highscore.text = PlayerPrefs.GetString("Highscore","0:00");
+
     }
 
     // Update is called once per frame
@@ -33,6 +34,11 @@ public class Timer : MonoBehaviour
         else
         {
             SceneManager.LoadScene("lose");
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.DeleteAll();
+            Highscore.text = "0:00";
         }
 
         DisplayTime(timeinseconds);
@@ -63,7 +69,7 @@ public class Timer : MonoBehaviour
         Timep = string.Format("{0:00}:{1:00}", minutes, seconds);
         if(frogcounter.frogCount == 3)
         {
-            if(timepassed < PlayerPrefs.GetFloat("Highscoreinsec", 0)) 
+            if(timepassed <= PlayerPrefs.GetFloat("Highscoreinsec", 300)) 
             { 
                 PlayerPrefs.SetFloat("Highscoreinsec", timepassed);
                 PlayerPrefs.SetString("Highscore", Timep);
@@ -73,4 +79,5 @@ public class Timer : MonoBehaviour
         }
 
     }
+
 }
