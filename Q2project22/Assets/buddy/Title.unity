@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 5617352}
   - component: {fileID: 5617354}
   - component: {fileID: 5617353}
+  - component: {fileID: 5617355}
   m_Layer: 5
   m_Name: TRAVELERS
   m_TagString: Untagged
@@ -195,6 +196,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5617351}
   m_CullTransparentMesh: 1
+--- !u!114 &5617355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b13d44c8a703245b4e51c63d00cd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 3.56
+  freq: 1.3
 --- !u!1 &131520130
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 1ac620bcb2360064ab0eb876a57c1bbf, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9612e3db1e7137644aad5276ce2b3961, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1223,6 +1238,7 @@ GameObject:
   - component: {fileID: 1367506112}
   - component: {fileID: 1367506114}
   - component: {fileID: 1367506113}
+  - component: {fileID: 1367506115}
   m_Layer: 5
   m_Name: LITTLE
   m_TagString: Untagged
@@ -1284,6 +1300,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367506111}
   m_CullTransparentMesh: 1
+--- !u!114 &1367506115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367506111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b13d44c8a703245b4e51c63d00cd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 3.82
+  freq: 1
 --- !u!1 &1653214246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,6 +1325,7 @@ GameObject:
   - component: {fileID: 1653214247}
   - component: {fileID: 1653214249}
   - component: {fileID: 1653214248}
+  - component: {fileID: 1653214250}
   m_Layer: 5
   m_Name: grer
   m_TagString: Untagged
@@ -1356,6 +1387,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653214246}
   m_CullTransparentMesh: 1
+--- !u!114 &1653214250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653214246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b13d44c8a703245b4e51c63d00cd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.6
+  freq: 1.52
 --- !u!1 &1683104568
 GameObject:
   m_ObjectHideFlags: 0
