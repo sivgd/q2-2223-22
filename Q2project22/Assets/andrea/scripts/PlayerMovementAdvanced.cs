@@ -5,6 +5,7 @@ using TMPro;
 
 public class PlayerMovementAdvanced : MonoBehaviour
 {
+    public dialoguebox dialoguebox;
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
@@ -90,9 +91,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            dialoguebox.DisplayNextSentence();
+        }
         // when to jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
 
