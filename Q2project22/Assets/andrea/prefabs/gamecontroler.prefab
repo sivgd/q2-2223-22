@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7327586094623755997}
   - component: {fileID: 7327586094623755996}
   - component: {fileID: 7327586094623755971}
+  - component: {fileID: 3567037636470300550}
+  - component: {fileID: 2592581789568117687}
   m_Layer: 0
   m_Name: gamecontroler
   m_TagString: Untagged
@@ -68,5 +70,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1e6c4dbce44d64bba421608762d55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timevalue: 300
+  timeinseconds: 300
   timetext: {fileID: 0}
+  timepassed: 0
+  frogcounter: {fileID: 0}
+  Highscore: {fileID: 0}
+--- !u!114 &3567037636470300550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327586094623755998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1f8becaca801f4da362a9474636d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namet: {fileID: 0}
+  dialoguetext: {fileID: 0}
+  Animator: {fileID: 0}
+--- !u!114 &2592581789568117687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327586094623755998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc57df70a16950f4592d42ac58ff1eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue:
+    name: 
+    sentences: []

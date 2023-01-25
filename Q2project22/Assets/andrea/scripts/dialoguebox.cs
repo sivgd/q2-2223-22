@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class dialoguebox : MonoBehaviour
 {
     private Queue<string> sentences;
-    public TextMeshProUGUI name;
-    public TextMeshProUGUI dialoguetext;
+    public TextMeshProUGUI namet;
+    public TextMeshProUGUI dialoguetextt;
     public Animator Animator;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class dialoguebox : MonoBehaviour
     {
         Animator.SetBool("IsOpen", true);
         Debug.Log("Starting text" + dialoguetext.name);
-        name.text = dialoguetext.name;
+        namet.text = dialoguetext.name;
         sentences.Clear();
 
         foreach(string sentence in dialoguetext.sentences)
@@ -40,7 +40,7 @@ public class dialoguebox : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialoguetext.text = sentence;
+        dialoguetextt.text = sentence;
     }
 
     void EndDialogue()
