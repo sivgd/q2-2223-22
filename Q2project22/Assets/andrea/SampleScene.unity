@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   namet: {fileID: 678432492}
-  dialoguetext: {fileID: 546506214}
+  dialoguetextt: {fileID: 546506214}
   Animator: {fileID: 1052175250}
 --- !u!114 &710723294
 MonoBehaviour:
