@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     public frogcounter frogcounter;
     public TextMeshProUGUI Highscore;
     private string Timep;
+    public dialoguebox dialoguebox;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +24,15 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timepassed >= 0 && frogcounter.frogCount < 3)
+        if(timepassed >= 0 && frogcounter.frogCount < 3 && dialoguebox.isopen == false)
         {
             timepassed += Time.deltaTime;
         }
-        if(timeinseconds > 0)
+        if(timeinseconds > 0 && dialoguebox.isopen == false)
         {
             timeinseconds -= Time.deltaTime;
         }
-        else
+        else if (timeinseconds <= 0 && dialoguebox.isopen == false)
         {
             SceneManager.LoadScene("lose");
         }
@@ -47,7 +48,7 @@ public class Timer : MonoBehaviour
 
     void DisplayTime(float timetodisplay)
     {
-        if(timetodisplay <0)
+        if(timetodisplay <0 && dialoguebox.isopen == false)
         {
             timetodisplay = 0;
         }

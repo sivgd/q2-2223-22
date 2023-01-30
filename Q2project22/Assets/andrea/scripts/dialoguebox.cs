@@ -10,6 +10,7 @@ public class dialoguebox : MonoBehaviour
     public TextMeshProUGUI namet;
     public TextMeshProUGUI dialoguetextt;
     public Animator Animator;
+    public bool isopen;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class dialoguebox : MonoBehaviour
     {
         sentences = new Queue<string>();
         Animator.SetBool("IsOpen", true);
+        isopen = true;
         Debug.Log("Starting text" + dialoguetext.name);
         namet.text = dialoguetext.name;
         sentences.Clear();
@@ -48,6 +50,7 @@ public class dialoguebox : MonoBehaviour
     {
         Debug.Log("end of conversation");
         Animator.SetBool("IsOpen", false);
+        isopen = false;
 
     }
 }
