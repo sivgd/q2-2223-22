@@ -144,6 +144,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void MovePlayer()
     {
+        if (dialoguebox.isopen == false)
+        {
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
@@ -166,6 +168,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
         // turn gravity off while on slope
         rb.useGravity = !OnSlope();
+        }
+
     }
 
     private void SpeedControl()
