@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathPlane : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class DeathPlane : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = TeleportTarget.transform.position;
+        SceneManager.LoadScene(5);
     }
-
+    
 }
