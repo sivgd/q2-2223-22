@@ -10,6 +10,10 @@ public class DeathPlane : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+            FindObjectOfType<PickUpController>().GetComponent<PickUpController>().equipped = false;
+            FindObjectOfType<PickUpController>().GetComponent<PickUpController>().slotFull = false;
+        
         SceneManager.LoadScene(5);
     }
     

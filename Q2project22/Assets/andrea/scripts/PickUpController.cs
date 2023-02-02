@@ -12,7 +12,7 @@ public class PickUpController : MonoBehaviour
     public float dropForwardForce, dropUpwardForce;
 
     public bool equipped;
-    public static bool slotFull;
+    public  bool slotFull;
     public faceplayer faceplayer;
 
     private void Start()
@@ -55,7 +55,7 @@ public class PickUpController : MonoBehaviour
     {
         equipped = true;
         slotFull = true;
-        faceplayer.enabled = false;
+        //faceplayer.enabled = false;
         //Make a child of the camera and move it to default position
         transform.SetParent(ItemContainer);
         transform.localPosition = Vector3.zero;
@@ -72,7 +72,7 @@ public class PickUpController : MonoBehaviour
     {
         equipped = false;
         slotFull = false;
-        faceplayer.enabled = true;
+        //faceplayer.enabled = true;
         //Set parent to null
         transform.SetParent(null);
 
